@@ -3,7 +3,11 @@
 Real-time webcam monitoring that turns computer-vision detections into
 actionable alerts using a local LLM (Ollama). No cloud, no API keys.
 
-![demo](demos/screenshot.png)
+## Demo
+
+| New person detected | Hand raised |
+|---|---|
+| ![New person](demos/new-person.png) | ![Hand raised](demos/hand-raised.png) |
 
 ## What it does
 - Detects faces and body pose with MediaPipe + OpenCV
