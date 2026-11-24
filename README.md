@@ -1,4 +1,4 @@
-# VisionGuard Agent
+﻿# VisionGuard Agent
 
 Real-time webcam monitoring that turns computer-vision detections into
 actionable alerts using a local LLM (Ollama). No cloud, no API keys.
@@ -46,7 +46,10 @@ python -m pytest             # run tests
 
 ## Example log (logs/events.csv)
 ```
-PASTE 3-4 REAL ROWS FROM YOUR NEW RUN HERE
+timestamp,event,faces,people,alert,severity,action,confidence,latency_ms
+2026-11-24 18:46:36,NEW_PERSON,1,1,New person detected,low,Monitor the person's behavior and ensure their safety,0.9,622
+2026-11-24 18:46:37,HAND_RAISED,1,1,"Person raised hand, may need attention",low,Check on the person and offer assistance if needed,0.8,649
+2026-11-24 18:46:46,HAND_RAISED,1,1,"A person raised a hand above shoulder level, may need help or attention",low,Check on the person and offer assistance if needed,0.9,987
 ```
 
 ## Limitations
